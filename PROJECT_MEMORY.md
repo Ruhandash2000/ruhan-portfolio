@@ -1,6 +1,6 @@
 # Portfolio project memory and handoff
 
-**Last updated:** 2026-10-24
+**Last updated:** 2026-10-25
 **Workspace:** `C:\Users\ruhan\OneDrive\Documents\Vs code\My portfolio`
 
 ## Goal
@@ -64,7 +64,7 @@ The workspace was empty at the start of the coding turn. A React 19 + Vite portf
 - `index.html` — page metadata and the tab title `Ruhan`; `public/favicon.png` is the user's portrait favicon.
 - `src/main.jsx` — React entry point.
 - `src/App.jsx` — header, hero, about, toolkit, two CV-based project summaries, study map, DIP feature, contact, and footer.
-- `src/styles.css` — responsive editorial-grid styling, monochrome palette, accent color, and device-specific hero layouts. Desktop and tablet use the same three-column composition with the tablet typography, portrait, and spacing scaled down proportionally; phone keeps the distinct headline-first layout with a separate full portrait and topic strip.
+- `src/styles.css` — responsive editorial-grid styling, monochrome palette, accent color, and device-specific layouts. Tablet uses the desktop multi-column page and the same desktop hero type/image sizing formulas; phone keeps the distinct headline-first hero with a separate full portrait and topic strip.
 - `public/images/hero-portrait.png` — monochrome/glitch portrait image supplied by the user for the hero.
 - `public/documents/Ruhan_Dash_Dibya_CV.docx` and `public/documents/Ruhan_Dash_Dibya_Resume.docx` — download copies based on the documents supplied on 2026-10-24. Cloudflare/Workers references and links were removed from these copies at the user's request; source files outside the workspace remain unchanged.
 - `README.md` — local run and personalization notes.
@@ -79,13 +79,13 @@ Google Cloud and Cloudflare are absent from the portfolio. The hero uses the por
 
 ## Verification and environment status
 
-- `npm run build` completed successfully on 2026-10-24.
+- `npm run build` completed successfully on 2026-10-25 after the latest tablet layout change.
 - Both downloadable DOCX copies were checked for `Cloudflare`/`workers.dev` text and hyperlinks; none remain. Each copy was rendered through Microsoft Word to a one-page PDF and visually reviewed.
 - The Vite dev server at `http://127.0.0.1:5173/` is only a local preview of these same project files; changes appear on GitHub only after committing and pushing.
 - The in-app browser could not reach the local preview during this iteration, so the new Contact download-link layout was not visually inspected. Do not claim it was visually verified.
-- The 2026-10-24 tablet hero refinement passes `npm run build`, but its viewport rendering still needs a visual check in the user's browser; the in-app browser could not reach localhost.
+- The 2026-10-25 tablet hero now shares the desktop type and portrait scale; its latest responsive render still needs a visual check.
 - No tests were added or run.
-- In the 2026-10-24 refinement, the tablet hero was returned to the same desktop composition and proportionally scaled; phone-specific composition remains intact.
+- In the 2026-10-25 refinement, tablet breakpoints use the desktop layout and hero sizing; phone-specific composition remains intact.
 
 ## Current unresolved details
 
@@ -93,7 +93,8 @@ Google Cloud and Cloudflare are absent from the portfolio. The hero uses the por
 2. The CV has populated the two known projects and education details. Add other project/profile links only if supplied.
 3. Visually review the latest desktop, tablet, and phone layouts. Build succeeds, but the browser preview could not be inspected by the agent.
 4. A GitHub push uploads source changes; it does not necessarily publish a live website. Confirm hosting configuration before describing a public URL as live.
+5. The local `Ruhan_Dash_Dibya_Resume.docx` differs from the last GitHub version. Preserve this uncommitted file unless the user requests that resume change.
 
 ## Safe handoff summary
 
-The portfolio is populated from the user's CV/resume, including skills, two projects, education, email, and document downloads. Preserve the monochrome editorial direction and the user's explicit choice to omit Google Cloud and Cloudflare. The repository remote is `origin` on GitHub, branch `main`; local changes still need to be committed and pushed when an upload is requested. A push uploads source but does not guarantee that a live website is deployed.
+The portfolio is populated from the user's CV/resume, including skills, two projects, education, email, and document downloads. Preserve the monochrome editorial direction and the user's explicit choice to omit Google Cloud and Cloudflare. The repository is public on GitHub and has been pushed with the user's approval. The existing hosted site does not auto-deploy from the repository; do not claim a live deployment without a separate explicit request.

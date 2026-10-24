@@ -21,7 +21,7 @@ Present the user as a CSE student who can connect broad CS foundations with prac
 - White/off-white paper surface, black typography, fine gray grid lines, restrained lime accent.
 - Large sans-serif display type with compact mono labels.
 - Portrait-led hero inspired by the uploaded reference. The user-supplied hero image is `public/images/hero-portrait.png`.
-- Keep the same three-column editorial composition on desktop and tablet: headline words on each side of a centered portrait, with tablet type, portrait, and spacing scaled together. On phone, keep the separate mobile composition with the complete headline first, the full portrait below it, and the topic strip after the picture.
+- Tablet should use the desktop multi-column layout and the same desktop hero type and portrait sizing formulas. On phone, keep the separate mobile composition with the complete headline first, the full portrait below it, and the topic strip after the picture.
 - The original site design reference is preserved at `reference/portfolio-style-reference.webp` for future review only; do not show that reference image as the user's portrait or project work.
 - Desktop uses multi-column grids; mobile collapses to single-column sections and a menu button.
 - Keep motion restrained, preserve keyboard focus, and respect `prefers-reduced-motion`.
@@ -38,7 +38,7 @@ Present the user as a CSE student who can connect broad CS foundations with prac
 - Created and populated the React 19/Vite portfolio with the user's supplied identity, education, project, skill, email, CV, and resume information.
 - Added `AGENTS.md`, `PROJECT_MEMORY.md`, and this plan to preserve context for another chat/agent.
 - Refined the hero into desktop/laptop, tablet, and phone layouts; on phone the headline is grouped into three phrases with deliberate left/center/right offsets and varied gaps, followed by a larger full portrait and the topic strip. Narrow-phone sections also use a single-column layout. The latest `npm run build` succeeds.
-- Updated the tablet hero to preserve the same three-column desktop composition with proportionally smaller type, portrait, and spacing; the separate phone hero remains unchanged.
+- Updated tablet breakpoints to use the desktop layout and hero type/image sizing formulas; the separate phone hero remains unchanged.
 
 ### Next
 
