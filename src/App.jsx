@@ -13,19 +13,19 @@ const toolGroups = [
     index: '01',
     title: 'Build for the web',
     detail: 'Responsive interfaces and modern web applications',
-    tools: ['React 19', 'TypeScript', 'JavaScript', 'HTML5', 'CSS3'],
+    tools: ['React 19', 'TypeScript', 'JavaScript', 'HTML5', 'CSS3', 'Vite', 'TanStack Start/Router', 'React Query'],
   },
   {
     index: '02',
     title: 'Program & work with data',
     detail: 'Programming languages, relational data, and CS foundations',
-    tools: ['Java', 'Python', 'C / C++', 'PHP', 'SQL'],
+    tools: ['Java', 'Python', 'C', 'C++', 'PHP', 'SQL', 'PostgreSQL', 'MySQL', 'SQLite'],
   },
   {
     index: '03',
     title: 'Build & connect',
     detail: 'Backend services, containers, and interface design',
-    tools: ['Supabase', 'Docker Desktop', 'Git & GitHub', 'Figma', 'Tailwind CSS'],
+    tools: ['Supabase', 'Docker Desktop', 'Git', 'GitHub', 'Figma', 'Tailwind CSS', 'Radix UI'],
   },
 ];
 
@@ -57,9 +57,9 @@ const projects = [
     index: '01',
     type: 'ONGOING · SOLO PROJECT',
     title: 'Neo Cash AI',
-    description: 'A cashless finance and academic app for verified student admissions, institution-based access, student wallets, fee management, and payment tracking.',
-    note: 'The AI help chat is a prototype; live model integration is planned.',
-    stack: ['React 19', 'TypeScript', 'Supabase', 'TanStack', 'React Query'],
+    description: 'A cashless finance and academic-operations app with student admission verification, administrator approval, institution-scoped access, student wallets, fee workflows, and payment tracking.',
+    note: 'The in-app AI help chat is a prototype; connection to a live AI model is planned.',
+    stack: ['React 19', 'TypeScript', 'TanStack Start/Router', 'Supabase', 'React Query', 'Figma'],
     href: 'https://github.com/Ruhandash2000/neo-cash-clone',
     style: 'project-art--web',
   },
@@ -67,8 +67,8 @@ const projects = [
     index: '02',
     type: 'INDEPENDENT BUILD',
     title: 'Personal Portfolio Website',
-    description: 'A responsive portfolio built with React 19, JavaScript, Vite, HTML, and custom CSS, with accessible layouts for phone, tablet, and desktop.',
-    stack: ['React 19', 'JavaScript', 'Vite', 'HTML5', 'CSS'],
+    description: 'A responsive single-page portfolio built with React 19, JavaScript, Vite 6, HTML5, and custom CSS, with accessible navigation and layouts for phone, tablet, and desktop.',
+    stack: ['React 19', 'JavaScript', 'Vite 6', 'HTML5', 'CSS'],
     href: 'https://github.com/Ruhandash2000/ruhan-portfolio',
     style: 'project-art--systems',
   },
@@ -176,8 +176,8 @@ function App() {
             <h2>Computer science,<br />made <span>practical.</span></h2>
           </div>
           <div className="intro-copy">
-            <p className="intro-lead">I’m a CSE student and solo builder of Neo Cash AI, a student-finance and academic-operations app.</p>
-            <p>I’m building its admission checks, student wallets, fee workflows, and admin tools. My studies cover core computer science and my chosen elective, Digital Image Processing.</p>
+            <p className="intro-lead">I’m a CSE student and solo builder of Neo Cash AI, a cashless finance and academic-operations app.</p>
+            <p>I’ve worked on student admission verification, wallet and fee workflows, and administrator tools. My studies span programming, algorithms, databases, operating systems, networks, AI, and the Digital Image Processing elective I selected.</p>
             <a className="text-link" href="#studies">Explore my learning path <ArrowIcon /></a>
           </div>
           <div className="intro-stamp"><span>Always</span><strong>learning<br />by doing</strong><span>↘</span></div>
@@ -244,7 +244,7 @@ function App() {
             number="04"
             eyebrow="What I’ve studied"
             title="Four years of foundations."
-            summary="From programming and databases to operating systems, AI, web engineering, and image processing."
+            summary="My CSE curriculum moves from programming basics to systems, AI, web engineering, and image processing."
           />
           <div className="study-table">
             <div className="study-table__head"><span>YEAR</span><span>FOCUS</span><span>SELECTED TOPICS</span><span aria-hidden="true">↘</span></div>

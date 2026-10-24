@@ -9,8 +9,8 @@ Read `PROJECT_MEMORY.md` and `PORTFOLIO_PLAN.md` before changing this project. T
 - The user says they can do the subjects listed in the four supplied CSE syllabus PDFs. Treat this as the user's self-report, not as a verified assessment.
 - Include React 19, Java, JavaScript, Python, HTML, CSS, Docker Desktop, and Supabase in the working skill inventory.
 - Do not include Google Cloud or Cloudflare in public portfolio content. The user explicitly said these do not need to be listed.
-- Do not invent projects, employment, awards, metrics, dates, contact information, or proficiency levels. Use the user's supplied CV/resume for the two listed projects and academic details. The user supplied `Ruhandashdibya.ed@gmail.com` for the portfolio contact section; additional profile URLs are still pending.
-- The user specified `Ruhan` as the portfolio display name; the CV gives the full name Ruhan Dash Dibya.
+- Do not invent projects, employment, awards, metrics, dates, contact information, or proficiency levels. Keep draft placeholders until the user supplies details. The user supplied `Ruhandashdibya.ed@gmail.com` for the portfolio contact section; public profile URLs are still pending.
+- `Ruhan` is currently a provisional display name taken from the workspace context; confirm before treating it as final.
 
 ## Design and implementation
 
@@ -24,6 +24,6 @@ Read `PROJECT_MEMORY.md` and `PORTFOLIO_PLAN.md` before changing this project. T
 
 ## Before completing the portfolio
 
-The supplied CV/resume, portrait, project links, email, university, and study details are already in the project. Only add extra social links or other project details if the user supplies them. Continue implementation without blocking on optional information.
+Get or confirm the user's real display name, preferred site language, profile photo (if wanted), project descriptions and links, public profile links, and university/study dates. The supplied Gmail is already linked in the contact section. Continue useful implementation work while other details are pending, but leave those fields clearly marked as placeholders.
 
-The project has been pushed to the user's public GitHub repository with their approval, including the CV and resume. Run `npm run build` after code changes. A local browser preview is only for checking the same project files; do not describe it as the hosted site. Do not claim a visual change is verified until its updated render has been inspected.
+Dependencies are now available in the workspace, and `npm run build` succeeded on 2026-10-16. The Vite dev server was started at `http://127.0.0.1:5173/`. Browser policy blocked the agent from inspecting the latest responsive preview, so do not claim this iteration was visually verified until it has actually been inspected.

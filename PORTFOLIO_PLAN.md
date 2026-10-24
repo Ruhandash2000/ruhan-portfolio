@@ -39,11 +39,10 @@ Present the user as a CSE student who can connect broad CS foundations with prac
 - Added `AGENTS.md`, `PROJECT_MEMORY.md`, and this plan to preserve context for another chat/agent.
 - Refined the hero into desktop/laptop, tablet, and phone layouts; on phone the headline is grouped into three phrases with deliberate left/center/right offsets and varied gaps, followed by a larger full portrait and the topic strip. Narrow-phone sections also use a single-column layout. The latest `npm run build` succeeds.
 - Updated the tablet hero to preserve the same three-column desktop composition with proportionally smaller type, portrait, and spacing; the separate phone hero remains unchanged.
-- Reduced visible technology chips and project copy; raised small text sizes across toolkit, projects, studies, contact, and footer; tightened the contact section based on the user's readability feedback.
 
 ### Next
 
-1. Inspect the updated desktop, tablet, and phone layouts after the readability changes.
+1. Visually review desktop, tablet, and phone layouts, then refine from the user's screenshots/feedback.
 2. Add project screenshots or details only when supplied by the user.
 3. Add any other public profile links if supplied; the email and known GitHub project links are connected.
 4. Use the supplied CV/resume and portrait as the source for identity, education, and project details.
