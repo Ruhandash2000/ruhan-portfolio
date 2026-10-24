@@ -1,6 +1,6 @@
 # Ruhan — CSE Portfolio
 
-A React 19 portfolio draft inspired by the supplied black-and-white editorial reference. It uses a responsive grid, the user's supplied monochrome hero portrait, a CSE learning map, and project cards ready for real project details.
+A React 19 portfolio for Ruhan Dash Dibya, a CSE student, inspired by the supplied black-and-white editorial reference. It uses a responsive grid, the supplied monochrome hero portrait, a CSE learning map, and two project summaries drawn from the user's CV.
 
 The supplied reference image is preserved in `reference/portfolio-style-reference.webp` for design review. It is not used as a public portfolio image.
 
@@ -10,10 +10,13 @@ The supplied reference image is preserved in `reference/portfolio-style-referenc
 2. Start the development server with `npm run dev`.
 3. Create a production build with `npm run build`.
 
-## Personalize before publishing
+## Portfolio content
 
-- Confirm the display name in `src/App.jsx` and `index.html`.
-- Replace the hero portrait only if the user chooses another image.
-- Replace the three draft project cards with real project summaries, screenshots, and links.
-- Add your real email and profile links in the contact section.
-- Add your university and study dates if you want them displayed.
+- The public display name is Ruhan; the CV name is Ruhan Dash Dibya.
+- The projects and education section are based on details supplied in the user's CV and resume.
+- The supplied Gmail and available GitHub project links are connected. Add other profile links only if the user provides them.
+- Google Cloud and Cloudflare are omitted at the user's request.
+
+## Downloadable documents
+
+The Contact section links to a CV and a shorter resume in `public/documents/`. These are edited copies of the documents supplied by the user; the originals were left unchanged. Cloudflare/Workers-hosted references and links were removed from the downloadable copies at the user's request.

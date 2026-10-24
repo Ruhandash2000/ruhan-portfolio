@@ -12,20 +12,20 @@ const toolGroups = [
   {
     index: '01',
     title: 'Build for the web',
-    detail: 'React 19 · JavaScript · HTML · CSS',
-    tools: ['React 19', 'JavaScript', 'HTML', 'CSS'],
+    detail: 'Responsive interfaces and modern web applications',
+    tools: ['React 19', 'TypeScript', 'JavaScript', 'HTML5', 'CSS3', 'Vite', 'TanStack Start/Router', 'React Query'],
   },
   {
     index: '02',
-    title: 'Program & solve',
-    detail: 'Programming languages, data, and algorithms',
-    tools: ['Java', 'Python', 'C', 'C++', 'PHP', 'MySQL'],
+    title: 'Program & work with data',
+    detail: 'Programming languages, relational data, and CS foundations',
+    tools: ['Java', 'Python', 'C', 'C++', 'PHP', 'SQL', 'PostgreSQL', 'MySQL', 'SQLite'],
   },
   {
     index: '03',
-    title: 'Ship & connect',
-    detail: 'Containerized development and backend services',
-    tools: ['Docker Desktop', 'Supabase'],
+    title: 'Build & connect',
+    detail: 'Backend services, containers, and interface design',
+    tools: ['Supabase', 'Docker Desktop', 'Git', 'GitHub', 'Figma', 'Tailwind CSS', 'Radix UI'],
   },
 ];
 
@@ -52,26 +52,24 @@ const studyAreas = [
   },
 ];
 
-const projectSlots = [
+const projects = [
   {
     index: '01',
-    type: 'FEATURED BUILD',
-    title: 'Your project goes here',
-    description: 'Add a project you made, what problem it solves, and the part you built.',
+    type: 'ONGOING · SOLO PROJECT',
+    title: 'Neo Cash AI',
+    description: 'A cashless finance and academic-operations app with student admission verification, administrator approval, institution-scoped access, student wallets, fee workflows, and payment tracking.',
+    note: 'The in-app AI help chat is a prototype; connection to a live AI model is planned.',
+    stack: ['React 19', 'TypeScript', 'TanStack Start/Router', 'Supabase', 'React Query', 'Figma'],
+    href: 'https://github.com/Ruhandash2000/neo-cash-clone',
     style: 'project-art--web',
   },
   {
     index: '02',
-    type: 'IMAGE PROCESSING',
-    title: 'A Digital Image Processing project',
-    description: 'Add a lab, assignment, or personal experiment from your DIP elective.',
-    style: 'project-art--image',
-  },
-  {
-    index: '03',
-    type: 'ALGORITHMS / SYSTEMS',
-    title: 'A problem you solved',
-    description: 'Show a data structures, algorithms, database, or systems project here.',
+    type: 'INDEPENDENT BUILD',
+    title: 'Personal Portfolio Website',
+    description: 'A responsive single-page portfolio built with React 19, JavaScript, Vite 6, HTML5, and custom CSS, with accessible navigation and layouts for phone, tablet, and desktop.',
+    stack: ['React 19', 'JavaScript', 'Vite 6', 'HTML5', 'CSS'],
+    href: 'https://github.com/Ruhandash2000/ruhan-portfolio',
     style: 'project-art--systems',
   },
 ];
@@ -178,8 +176,8 @@ function App() {
             <h2>Computer science,<br />made <span>practical.</span></h2>
           </div>
           <div className="intro-copy">
-            <p className="intro-lead">I’m a CSE student who enjoys turning what I learn into software that people can use.</p>
-            <p>My studies span programming, algorithms, databases, operating systems, networks, AI, and digital image processing. Outside the classroom, I’ve been exploring modern web development and tools for building and connecting apps.</p>
+            <p className="intro-lead">I’m a CSE student and solo builder of Neo Cash AI, a cashless finance and academic-operations app.</p>
+            <p>I’ve worked on student admission verification, wallet and fee workflows, and administrator tools. My studies span programming, algorithms, databases, operating systems, networks, AI, and the Digital Image Processing elective I selected.</p>
             <a className="text-link" href="#studies">Explore my learning path <ArrowIcon /></a>
           </div>
           <div className="intro-stamp"><span>Always</span><strong>learning<br />by doing</strong><span>↘</span></div>
@@ -214,24 +212,27 @@ function App() {
           <SectionHeading
             number="03"
             eyebrow="Selected work"
-            title="Show what you’ve made."
-            summary="Project details are still needed. These spaces are ready for your real builds, screenshots, and links."
+            title="A couple of builds."
+            summary="An ongoing student-finance app and a responsive portfolio, built while learning by doing."
           />
           <div className="project-grid">
-            {projectSlots.map((project) => (
+            {projects.map((project) => (
               <article className="project-card" key={project.index}>
                 <div className={'project-art ' + project.style} aria-hidden="true">
                   <span className="project-art__index">{project.index}</span>
-                  {project.index === '01' && <div className="browser-art"><div className="browser-art__bar"><i /><i /><i /></div><div className="browser-art__body"><span /><span /><b>BUILD<br />SOMETHING<br />USEFUL.</b><i /></div></div>}
-                  {project.index === '02' && <div className="image-art"><div className="image-art__circle" /><div className="image-art__cross" /><span>PIXEL<br />STUDY</span></div>}
-                  {project.index === '03' && <div className="code-art"><span>01&nbsp; function solve(input) {'{'}</span><span>02&nbsp; &nbsp; const result = [];</span><span>03&nbsp; &nbsp; return result;</span><span>04&nbsp; {'}'}</span><b>⌘</b></div>}
-                  <span className="project-art__draft">Draft slot</span>
+                  {project.index === '01' && <div className="browser-art"><div className="browser-art__bar"><i /><i /><i /></div><div className="browser-art__body"><span /><span /><b>NEO<br />CASH AI</b><i /></div></div>}
+                  {project.index === '02' && <div className="code-art"><span>01&nbsp; R. / PORTFOLIO</span><span>02&nbsp; React 19 · Vite 6</span><span>03&nbsp; Responsive layouts</span><span>04&nbsp; Accessible navigation</span><b>R.</b></div>}
+                  <span className="project-art__label">Illustrative visual</span>
                 </div>
                 <div className="project-info">
-                  <div className="project-info__meta"><span>{project.type}</span><span>{project.index} / 03</span></div>
+                  <div className="project-info__meta"><span>{project.type}</span><span>{project.index} / 02</span></div>
                   <h3>{project.title}</h3>
                   <p>{project.description}</p>
-                  <span className="project-prompt">Details + link to add</span>
+                  {project.note && <p className="project-note">{project.note}</p>}
+                  <div className="project-stack" aria-label={project.title + ' technologies'}>
+                    {project.stack.map((tool) => <span className="tag" key={tool}>{tool}</span>)}
+                  </div>
+                  {project.href && <a className="project-link" href={project.href} target="_blank" rel="noreferrer">View GitHub repository <ArrowIcon diagonal /></a>}
                 </div>
               </article>
             ))}
@@ -256,6 +257,11 @@ function App() {
               </article>
             ))}
           </div>
+          <div className="education-note">
+            <strong>B.Sc. (Honours), Computer Science &amp; Engineering</strong>
+            <span>Dhaka City College · National University Professional Programme</span>
+            <span>Final examinations completed October 2026; results pending.</span>
+          </div>
           <div className="dip-feature">
             <div className="dip-feature__index">ELECTIVE / 04</div>
             <div>
@@ -278,6 +284,10 @@ function App() {
             <p>I’m open to conversations about projects, internships, and opportunities to learn by building.</p>
             <a className="contact-email" href="mailto:Ruhandashdibya.ed@gmail.com">Ruhandashdibya.ed@gmail.com</a>
             <a className="contact-button" href="mailto:Ruhandashdibya.ed@gmail.com" aria-label="Send an email to Ruhandashdibya.ed@gmail.com">Email me <ArrowIcon diagonal /></a>
+            <div className="contact-downloads" aria-label="Download my CV or resume">
+              <a className="download-link" href="/documents/Ruhan_Dash_Dibya_CV.docx" download>Download CV <span aria-hidden="true">↓</span></a>
+              <a className="download-link" href="/documents/Ruhan_Dash_Dibya_Resume.docx" download>Download Resume <span aria-hidden="true">↓</span></a>
+            </div>
           </div>
           <div className="contact-side">CURRENTLY<br />LEARNING &amp; BUILDING<br /><span>✳</span></div>
         </section>
@@ -285,7 +295,7 @@ function App() {
 
       <footer className="site-footer">
         <div className="footer-top"><a className="footer-brand" href="#home">Ruhan<span>.</span></a><span>Computer Science &amp; Engineering</span><a href="#home">Back to top ↑</a></div>
-        <div className="footer-bottom"><span>Made with curiosity.</span><span>© 2026 Ruhan · Portfolio draft</span></div>
+        <div className="footer-bottom"><span>Made with curiosity.</span><span>© 2026 Ruhan</span></div>
       </footer>
     </div>
   );
