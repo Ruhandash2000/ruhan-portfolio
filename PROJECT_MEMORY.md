@@ -1,6 +1,6 @@
 # Portfolio project memory and handoff
 
-**Last updated:** 2026-10-24
+**Last updated:** 2026-10-25
 **Workspace:** `C:\Users\ruhan\OneDrive\Documents\Vs code\My portfolio`
 
 ## Goal
@@ -57,7 +57,7 @@ The syllabus documents describe the following broad curriculum. The user confirm
 
 ## Current implementation
 
-The workspace was empty at the start of the coding turn. A React 19 + Vite portfolio draft has been created from scratch:
+The workspace began empty. A React 19 + Vite portfolio has been created and populated from the user's supplied CV/resume:
 
 - `package.json` — React 19, React DOM 19, Vite scripts/dependencies.
 - `vite.config.js` — Vite React plugin configuration.
@@ -79,11 +79,11 @@ Google Cloud and Cloudflare are absent from the portfolio. The hero uses the por
 
 ## Verification and environment status
 
-- `npm run build` completed successfully on 2026-10-24.
+- `npm run build` completed successfully on 2026-10-25 after the latest readability refinements.
 - Both downloadable DOCX copies were checked for `Cloudflare`/`workers.dev` text and hyperlinks; none remain. Each copy was rendered through Microsoft Word to a one-page PDF and visually reviewed.
 - The Vite dev server at `http://127.0.0.1:5173/` is only a local preview of these same project files; changes appear on GitHub only after committing and pushing.
 - The in-app browser could not reach the local preview during this iteration, so the new Contact download-link layout was not visually inspected. Do not claim it was visually verified.
-- The 2026-10-24 tablet hero refinement passes `npm run build`, but its viewport rendering still needs a visual check in the user's browser; the in-app browser could not reach localhost.
+- The latest text-size and content-density refinements build successfully, but their updated responsive rendering has not yet been visually inspected.
 - No tests were added or run.
 - In the 2026-10-24 refinement, the tablet hero was returned to the same desktop composition and proportionally scaled; phone-specific composition remains intact.
 
@@ -91,9 +91,9 @@ Google Cloud and Cloudflare are absent from the portfolio. The hero uses the por
 
 1. The user has supplied a hero portrait, CV, and resume; use these sources unless they ask for updates.
 2. The CV has populated the two known projects and education details. Add other project/profile links only if supplied.
-3. Visually review the latest desktop, tablet, and phone layouts. Build succeeds, but the browser preview could not be inspected by the agent.
-4. A GitHub push uploads source changes; it does not necessarily publish a live website. Confirm hosting configuration before describing a public URL as live.
+3. Visually inspect the latest desktop, tablet, and phone layouts after typography refinements.
+4. A newer local copy of `public/documents/Ruhan_Dash_Dibya_Resume.docx` appeared after the last GitHub sync. Preserve it; do not include it in unrelated commits unless the user asks.
 
 ## Safe handoff summary
 
-The portfolio is populated from the user's CV/resume, including skills, two projects, education, email, and document downloads. Preserve the monochrome editorial direction and the user's explicit choice to omit Google Cloud and Cloudflare. The repository remote is `origin` on GitHub, branch `main`; local changes still need to be committed and pushed when an upload is requested. A push uploads source but does not guarantee that a live website is deployed.
+The portfolio is populated from the user's CV/resume, including skills, two projects, education, email, and document downloads. Preserve the monochrome editorial direction and the user's explicit choice to omit Google Cloud and Cloudflare. The repository is public on GitHub, and the user approved uploading the CV/resume there. Keep any newly changed local resume file out of unrelated commits unless requested.
